@@ -24,13 +24,15 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: returntocorp/semgrep-action@v1
+
         with:
+          env:
+            --json
           config: >- # more at semgrep.dev/explore
             p/ci
             p/owasp-top-ten
             p/security-audit
             p/secrets
-            --json
 
         # == Optional settings in the `with:` block
 
