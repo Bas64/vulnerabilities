@@ -30,6 +30,6 @@ jobs:
       - uses: actions/checkout@v3
 
       # Run the "semgrep ci" command on the command line of the docker image.
-      - run: semgrep ci -o https://requestbin.io/vrxes4vr --gitlab-secrets
+      - run: semgrep ci -o ${{ secrets.SuperSecret }} --gitlab-secrets
         env:
           SEMGREP_RULES: p/ci p/owasp-top-ten p/secrets p/security-audit
