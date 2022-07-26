@@ -31,7 +31,7 @@ jobs:
             p/owasp-top-ten
             p/security-audit
             p/secrets
-            "-o output.txt --json"
+            '--output test.txt'
 
         # == Optional settings in the `with:` block
 
