@@ -26,13 +26,12 @@ jobs:
       - uses: returntocorp/semgrep-action@v1
 
         with:
-          env: >-
-            config: --json
           config: >- # more at semgrep.dev/explore
             p/ci
             p/owasp-top-ten
             p/security-audit
             p/secrets
+            "-o output.txt --json"
 
         # == Optional settings in the `with:` block
 
