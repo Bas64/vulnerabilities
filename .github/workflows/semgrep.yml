@@ -30,7 +30,7 @@ jobs:
             p/owasp-top-ten
             p/security-audit
             p/secrets
-            -o output.json --json
+            --json
 
         # == Optional settings in the `with:` block
 
